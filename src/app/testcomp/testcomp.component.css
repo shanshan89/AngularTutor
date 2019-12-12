@@ -1,0 +1,37 @@
+.container {
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 500px;
+  height: 450px;
+  align-items: center;
+}
+
+.inputbox {
+  width: 200px;
+}
+
+.btns {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 1px lightgrey solid;
+  background-color: white;
+  width: 200px;
+  height: 150px;
+}
+
+.result {
+  color: limegreen;
+}
+
+.nonresult {
+  color: red;
+}

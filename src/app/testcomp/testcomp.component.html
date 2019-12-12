@@ -1,0 +1,36 @@
+<div class="container">
+  <h2>Easy Cooking</h2>
+  <input class="inputbox" type="text" placeholder="please enter an ingredient" [(ngModel)]="material">
+
+  <div class="btns">
+    <button (click)="addMaterial()">Add</button>
+    <button (click)="makeDish()">Finish</button>
+    <button (click)="startOver()">Reset</button>
+  </div>
+
+  <div>Ingredients you have added:</div>
+  <div class="box">
+    <div *ngFor="let mat of matArr">
+      {{mat}}
+    </div>
+  </div>
+
+  <div *ngIf="!showResult">
+    No dish is made currently.
+    <br>
+    Please add ingredients above first.
+  </div>
+
+  <div *ngIf="showResult && success" class="result">
+    Congratulations!
+    <br>
+    <span>You just made </span><span>{{dish}}</span>.
+  </div>
+
+  <div *ngIf="showResult && !success" class="nonresult">
+    Sorry, there's no such dish.
+    <br>
+    Please try different ingredients.
+  </div>
+
+</div>

@@ -8,8 +8,8 @@ import { Student } from '../../shared/student.model';
   styleUrls: ['./server.component.css']
 })
 export class ServerComponent {
-    serverId = 10;
-    serverStatus = 'offLine';
+    serverId = 9;
+    serverStatus = 'onLine';
     counter = 0;
     isLogin = false;
     userName: string;
